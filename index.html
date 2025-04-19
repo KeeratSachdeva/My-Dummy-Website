@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dummy Website</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+        let digitalData = {};
+        digitalData.page = {
+            name: 'home page',
+            type: 'home'
+        };
+    </script>
+    <style type="text/css">
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #greet {
+            display: inline-block;
+            font-size: 30px;
+        }
+        span.typed-cursor {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greet"></h1>
+</body>
+<script type="text/javascript">
+    let typed = new Typed(
+        '#greet',
+        {
+            strings: ['नमस्ते!', 'Hello!', 'Bonjour!', 'Hola!', 'こんにちは!'],
+            typeSpeed: 100,
+            backDelay: 1000,
+            backSpeed: 40, // ← deletes at XX ms per character.
+            loop: true,
+            showCursor: true
+        }
+    );
+</script>
+</html>
